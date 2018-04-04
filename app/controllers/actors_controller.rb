@@ -6,7 +6,7 @@ class ActorsController < ApplicationController
 
 def create
   actor_params = params.require(:actor).permit!
-if actor_params ["death_date"].present? && actor_params["death_place"].present?
+if actor_params["death_date"].present? && actor_params["death_place"].present?
    actor_params.merge!({"alive"=> false})
 else
   actor_params ["alive"] = true
