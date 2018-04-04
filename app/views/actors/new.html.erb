@@ -1,0 +1,10 @@
+<%= form_for @actor, url: actors_path, method: "post" do |actor|%>
+  <%= actor.text_field :name, placeholder: "Nombre"%>
+  <%= actor.text_field :image_url, placeholder: "Imagen" %>
+  <%= actor.text_field :bio, placeholder: "Imagen"  %>
+  <%= actor.date_field :birth_date, placeholder: "Birth date"  %>
+  <%= actor.text_field :birth_place, placeholder: "Birth place"  %>
+  <%= actor.date_field :death_date, placeholder: "Death Date" %>
+  <%= actor.text_field :death_place, placeholder: "Death Place"  %>
+  <%= actor.submit "Crear Actor" %>
+<% end %>
