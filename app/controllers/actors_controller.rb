@@ -20,5 +20,4 @@ end
   def new
     @actor = Actor.new
    end
-
 end
